@@ -5,76 +5,115 @@
     <meta charset="UTF-8">
     <title>Questionaire</title>
     <meta name="description" content="Questionaire">
+    <link rel="stylesheet" type="text/css" href="stylesheets/questionaire.css">
   </head>
   
   <body>
     <header>
-      <h1>Questionaire</h1>
+    <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-32076.js"></script>
     </header>
     
     <section>
-      <label for="n"><h4>Your name :</h4></label>
+      <h1>Questionaire</h1>
+            
+      <label for="n"><div class="ques">
+      <h4>Your name :</h4>
       <input type="text" name="name" id="n"><br>
+      </div>
+      </label>
 
-    
+      <div class="ques">
       <h4>What is your gender ?</h4>
       <label for="m">Male</label>
       <input type="radio" name="gender" id="m"><br>
       <label for="f">Female</label>
       <input type="radio" name="gender" id="f"><br>
-    
-      <label for="d"><h4>Birthday :</h4></label>
-      <input type="date" name="date" id="d"><br>
+      </div>
       
-      <h4>Which form of transport do you use ?<br></h4>
-    <label for="w">Walking</label>
-    <input type="checkbox" name="transport" id="w"><br>
-    <label for="bk">Bike</label>
-    <input type="checkbox" name="transport" id="bk"><br>
-    <label for="mc">Motorcycle</label>
-    <input type="checkbox" name="transport" id="mc"><br>
-    <label for="c">Car</label>
-    <input type="checkbox" name="transport" id="c"><br>
-    <label for="bs">Bus</label>
-    <input type="checkbox" name="transport" id="bs"><br>
-    <label for="mt">Metro</label>
-    <input type="checkbox" name="transport" id="mt"><br>
-    <label for="t">Train</label>
-    <input type="checkbox" name="transport" id="t"><br>
-    <label for="air">Airplane</label>
-    <input type="checkbox" name="transport" id="air"><br>
-    <br>
+      <label for="d"><div class="ques">
+      <h4>Birthday :</h4>
+      <input type="date" name="date" id="d"><br>
+      </div>
+      </label>
+      
+      <div class="ques">
+        
+      <h4>Which form of transport do you use ? (Choose as many as you like)<br></h4>
+        
+    <input type="checkbox" name="transport" id="w">    
+    <label for="w" class="t-check">Walking</label>    
+        
+    <input type="checkbox" name="transport" id="bk">    
+    <label for="bk" class="t-check">Bike</label>    
+        
+    <input type="checkbox" name="transport" id="mc">    
+    <label for="mc" class="t-check">Motorcycle</label> 
     
+    <input type="checkbox" name="transport" id="c">    
+    <label for="c" class="t-check">Car</label>    <br>
+    
+    <input type="checkbox" name="transport" id="bs">    
+    <label for="bs" class="t-check">Bus</label>    
+    
+    <input type="checkbox" name="transport" id="mt">    
+    <label for="mt" class="t-check">Metro</label>    
+        
+    <input type="checkbox" name="transport" id="t">    
+    <label for="t" class="t-check">Train</label>    
+    
+    <input type="checkbox" name="transport" id="air">    
+    <label for="air" class="t-check">Airplane</label>    
+    
+      </div>
+      
+      <div class="ques">
       <h4>What is the highest level of education you have completed ?</h4>
-    <label for="lhs">Less than High School</label>
-    <input type="radio" name="degree" id="lhs"><br>
-    <label for="hs">High School or equivalent</label>
-    <input type="radio" name="degree" id="hs"><br>
-    <label for="cu">Attend College / University</label>
-    <input type="radio" name="degree" id="cu"><br>
-    <label for="ba">Bachelor's degree</label>
-    <input type="radio" name="degree" id="ba"><br>
-    <label for="md">Master's degree </label>
-    <input type="radio" name="degree" id="md"><br>
-    <label for="pro">Professional degree </label>
-    <input type="radio" name="degree" id="pro"><br>
-    <label for="phd">Doctorate degree </label>
-    <input type="radio" name="degree" id="phd"><br>
-    <label for="na">I prefer not to answer</label>
-    <input type="radio" name="degree" id="na"><br>
-    
-      <label for="field"><h4>Which industry do you work in or are most involved with?</h4></label>
+        
+        <input type="radio" name="degree" id="lhs" >
+        <label for="lhs" class="d-check">Less than High School</label><br>
+        
+        <input type="radio" name="degree" id="hs">
+        <label for="hs" class="d-check">High School or equivalent</label><br>
+        
+        <input type="radio" name="degree" id="cu">
+        <label for="cu" class="d-check">Attend College / University</label><br>
+        
+        <input type="radio" name="degree" id="ba">
+        <label for="ba" class="d-check">Bachelor's degree</label><br>
+        
+        <input type="radio" name="degree" id="md">
+        <label for="md" class="d-check">Master's degree </label><br>
+        
+        <input type="radio" name="degree" id="pro">
+        <label for="pro" class="d-check">Professional degree </label><br>
+        
+        <input type="radio" name="degree" id="phd">
+        <label for="phd" class="d-check">Doctorate degree </label><br>
+        
+        <input type="radio" name="degree" id="na">
+        <label for="na" class="d-check">I prefer not to answer</label><br>
+        
+      </div>
+      
+      <label for="field"><div class="ques">
+      <h4>Which industry do you work in or are most involved with?</h4>
     <input type="text" name="industry" id="field">
+      </div></label>
     
-      <label for="tel"><h4>Your phone #</h4></label>
+      <label for="tel"><div class="ques">
+      <h4>Your phone #</h4>
     <input type="tel" name="telephone" id="tel">
+      </div></label>
     
-      <label for="mail"><h4>Email address</h4></label>
+      <label for="mail"><div class="ques">
+      <h4>Email address</h4>
     <input type="email" name="email" id="mail">
+      </div></label>
     
-      <label for="web"><h4>Personal Website</h4></label>
+      <label for="web"><div class="ques">
+      <h4>Personal Website</h4>
     <input type="url" name="website" id="web"><br>
-      <br>
+      </div></label>
     
       <div><input type="submit" value="Submit"></div>
       <br>
@@ -87,4 +126,13 @@
     
   </body>
   
+</html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
 </html>
