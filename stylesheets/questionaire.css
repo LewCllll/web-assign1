@@ -1,0 +1,82 @@
+body{
+  background-color:rgba(0,0,0,0.2);
+}
+
+section{
+  width:1000px;
+  margin:10px auto;
+  padding:30px 50px;
+  background-color:#d96459;
+  border-radius:3em;
+  font-family:'sourcehansans-tc-light','微軟正黑體', sans-serif;
+}
+
+.ques{
+  color:#588c7e;
+  padding:1px 2em 2em 2em;
+}
+
+.ques{
+  width:900px;
+  margin:30px auto;
+  border-radius:2em;
+  background-color:#f2ae72;
+}
+
+.ques:hover{
+  background-color:#F2E394;
+}
+
+input:focus{
+  background-color:#F2E394;
+}
+
+input:checked+.d-check{
+  color:#8c4646;
+  background-color:rgba(300,250,118,0.8);
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;  
+}
+
+input:checked+.t-check{
+  color:#8c4646;
+  background-color:rgba(300,250,118,0.8);
+  
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[name=transport]{
+  display:none;
+}
+
+input[name=degree]{
+  display:none;
+}
+
+label.d-check{
+  display:inline-block;
+  width:230px;
+  height:30px;
+  background-color:rgba(255,255,255,0.3);
+  margin:2px;
+  padding:0em 1em;
+}
+
+label.t-check{
+  display:inline-block;
+  width:100px;
+  background-color:rgba(255,255,255,0.3);
+  margin:6px 5px;
+  padding:1em 1em;
+}
+
+
+
