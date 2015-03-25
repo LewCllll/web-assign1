@@ -1,0 +1,43 @@
+body{
+  background-color:grey;
+}
+
+article{
+  margin:10px auto;
+  padding:30px 50px;
+  width: 800px;
+  font-family:'sourcehansans-tc-light','微軟正黑體', sans-serif;
+  background:url(http://subtlepatterns.com/patterns/small_steps.png);
+  border-radius:2em;
+}
+
+article>h3{
+  font-size:24px;
+  color:rgba(52,150,96,1);
+  border-bottom:2px solid;
+}
+
+article>p{
+  font-size:16px; 
+}
+
+.info>ol>li:nth-child(even){
+  background-color:rgba(0,218,218,0.2);
+}
+
+.more>a:link{
+  color:blue;
+}
+
+.more>a:visited{
+  color:purple;
+}
+
+.more>a:hover{
+  text-decoration:underline;
+  color:red;
+}
+
+.more>a:active{
+  color:yellow;
+}
