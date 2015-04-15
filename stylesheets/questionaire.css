@@ -8,8 +8,8 @@ body{
   background-color:rgba(0,0,0,0.2);
 }
 
-section{
-  max-width:1000px;
+.container{
+  max-width:900px;
   margin:10px auto;
   padding:30px 10px;
   background-color:#d96459;
@@ -19,14 +19,22 @@ section{
 
 .ques{
   color:#588c7e;
-  padding:1px 2em 2em 2em;
 }
 
 .ques{
   max-width:900px;
-  margin:30px auto;
+  padding:1em auto 2em;
+  margin:20px auto;
   border-radius:2em;
   background-color:#f2ae72;
+}
+
+.input-lg{
+  width:200px;
+}
+
+.d-check:hover, .t-check:hover{
+  background-color:#FFFFFF;
 }
 
 .ques:hover{
@@ -72,17 +80,19 @@ label.d-check{
   width:230px;
   height:30px;
   background-color:rgba(255,255,255,0.3);
-  margin:2px;
+  margin:3px 5px;
   padding:0em 1em;
 }
 
 label.t-check{
   display:inline-block;
-  width:110px;
+  width:100%;
   background-color:rgba(255,255,255,0.3);
   margin:6px 5px;
   padding:1em 1em;
 }
+
+
 
 
 

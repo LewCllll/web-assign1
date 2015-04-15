@@ -2,122 +2,167 @@
 <html>
   
   <head>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>Questionaire</title>
     <meta name="description" content="Questionaire">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-32076.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/questionaire.css">
   </head>
   
   <body>
-    <header>
-    <script src="//s3-ap-northeast-1.amazonaws.com/justfont-user-script/jf-32076.js"></script>
+    
+    <header>     
     </header>
     
     <section>
-      <h1>Questionaire</h1>
-            
-      <label for="n"><div class="ques">
-      <h4>Your name :</h4>
-      <input type="text" name="name" id="n"><br>
+      <div class="container">
+        
+        <h1>Questionaire</h1>
+      
+        <div class="ques col-xs-12 col-sm-12 col-md-12">
+          <label for="n">
+            <h4>Your name :</h4>
+            <input type="text" name="name" id="n" class="input-lg">
+          </label>
       </div>
-      </label>
 
-      <div class="ques">
-      <h4>What is your gender ?</h4>
-      <label for="m">Male</label>
-      <input type="radio" name="gender" id="m"><br>
-      <label for="f">Female</label>
-      <input type="radio" name="gender" id="f"><br>
+      <div class="ques col-xs-12 col-sm-12 col-md-12">
+        <h4>What is your gender ?</h4>
+        <label for="m">Male</label>
+        <input type="radio" name="gender" id="m"><br>
+        <label for="f">Female</label>
+        <input type="radio" name="gender" id="f"><br>
       </div>
       
-      <label for="d"><div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12">
+      <label for="d">
       <h4>Birthday :</h4>
       <input type="date" name="date" id="d"><br>
       </div>
       </label>
       
-      <div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12">
         
       <h4>Which form of transport do you use ? (Choose as many as you like)<br></h4>
-        
-    <input type="checkbox" name="transport" id="w">    
-    <label for="w" class="t-check">Walking</label>    
-        
-    <input type="checkbox" name="transport" id="bk">    
-    <label for="bk" class="t-check">Bike</label>    
-        
-    <input type="checkbox" name="transport" id="mc">    
-    <label for="mc" class="t-check">Motorcycle</label> 
-    
-    <input type="checkbox" name="transport" id="c">    
-    <label for="c" class="t-check">Car</label>    <br>
-    
-    <input type="checkbox" name="transport" id="bs">    
-    <label for="bs" class="t-check">Bus</label>    
-    
-    <input type="checkbox" name="transport" id="mt">    
-    <label for="mt" class="t-check">Metro</label>    
-        
-    <input type="checkbox" name="transport" id="t">    
-    <label for="t" class="t-check">Train</label>    
-    
-    <input type="checkbox" name="transport" id="air">    
-    <label for="air" class="t-check">Airplane</label>    
-    
+      
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-3">   
+        <input type="checkbox" name="transport" id="w"> 
+        <label for="w" class="t-check">Walking</label>
       </div>
       
-      <div class="ques">
+    <div class="col-xs-6 col-sm-6 col-md-3">     
+    <input type="checkbox" name="transport" id="bk" class="col-xs-6">    
+    <label for="bk" class="t-check">Bike</label> 
+      </div>
+      
+    <div class="col-xs-6 col-sm-6 col-md-3">      
+    <input type="checkbox" name="transport" id="mc">    
+    <label for="mc" class="t-check">Motorcycle</label>
+      </div>
+      
+    <div class="col-xs-6 col-sm-6 col-md-3">  
+    <input type="checkbox" name="transport" id="c">    
+    <label for="c" class="t-check">Car</label>  
+      </div>
+    
+      <div class="col-xs-6 col-sm-6 col-md-3">  
+    <input type="checkbox" name="transport" id="bs">    
+    <label for="bs" class="t-check">Bus</label> 
+        </div>
+      
+     <div class="col-xs-6 col-sm-6 col-md-3">       
+    <input type="checkbox" name="transport" id="mt">   
+          <label for="mt" class="t-check">Metro</label>    
+       </div>
+      
+     <div class="col-xs-6 col-sm-6 col-md-3">     
+    <input type="checkbox" name="transport" id="t">    
+    <label for="t" class="t-check">Train</label>  
+       </div>
+      
+    <div class="col-xs-6 col-sm-6 col-md-3">  
+    <input type="checkbox" name="transport" id="air">    
+    <label for="air" class="t-check">Airplane</label> 
+      </div>
+    
+        </div></div>
+      
+      <div class="ques col-xs-12 col-sm-12 col-md-12">
       <h4>What is the highest level of education you have completed ?</h4>
         
-        <input type="radio" name="degree" id="lhs" >
-        <label for="lhs" class="d-check">Less than High School</label><br>
+        <div class="row">
         
+        <div class="col-xs-12 col-sm-12 col-md-6">
+        <input type="radio" name="degree" id="lhs">
+        <label for="lhs" class="d-check">Less than High School</label><br>
+          </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6">
         <input type="radio" name="degree" id="hs">
         <label for="hs" class="d-check">High School or equivalent</label><br>
+          </div>
         
+        <div class="col-xs-12 col-sm-12 col-md-6">  
         <input type="radio" name="degree" id="cu">
         <label for="cu" class="d-check">Attend College / University</label><br>
+          </div>
         
+        <div class="col-xs-12 col-sm-12 col-md-6">  
         <input type="radio" name="degree" id="ba">
         <label for="ba" class="d-check">Bachelor's degree</label><br>
+          </div>
         
+          <div class="col-xs-12 col-sm-12 col-md-6">
         <input type="radio" name="degree" id="md">
         <label for="md" class="d-check">Master's degree </label><br>
+            </div>
         
+          <div class="col-xs-12 col-sm-12 col-md-6">
         <input type="radio" name="degree" id="pro">
         <label for="pro" class="d-check">Professional degree </label><br>
+            </div>
         
+          <div class="col-xs-12 col-sm-12 col-md-6">
         <input type="radio" name="degree" id="phd">
         <label for="phd" class="d-check">Doctorate degree </label><br>
+            </div>
         
+          <div class="col-xs-12 col-sm-12 col-md-6">
         <input type="radio" name="degree" id="na">
         <label for="na" class="d-check">I prefer not to answer</label><br>
+            </div>
         
-      </div>
+        </div></div>
       
-      <label for="field"><div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12"><label for="field">
       <h4>Which industry do you work in or are most involved with?</h4>
-    <input type="text" name="industry" id="field">
+    <input type="text" name="industry" id="field" class="input-lg">
       </div></label>
     
-      <label for="tel"><div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12"><label for="tel">
       <h4>Your phone #</h4>
-    <input type="tel" name="telephone" id="tel">
-      </div></label>
+    <input type="tel" name="telephone" id="tel" class="input-lg">
+      </label></div>
     
-      <label for="mail"><div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12"><label for="mail">
       <h4>Email address</h4>
-    <input type="email" name="email" id="mail">
-      </div></label>
+    <input type="email" name="email" id="mail" class="input-lg">
+      </label></div>
     
-      <label for="web"><div class="ques">
+      <div class="ques col-xs-12 col-sm-12 col-md-12"><label for="web">
       <h4>Personal Website</h4>
-    <input type="url" name="website" id="web"><br>
-      </div></label>
+    <input type="url" name="website" id="web" class="input-lg"><br>
+      </label></div>
     
-      <div><input type="submit" value="Submit"></div>
+      <div><button type="button" class="btn btn-primary">Submit</button></div>
       <br>
+      
+      </div>
       
     </section>
 
