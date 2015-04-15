@@ -17,13 +17,13 @@ article{
   border-radius:2em;
 }
 
-article>h3{
+article h3{
   font-size:24px;
   color:rgba(52,150,96,1);
   border-bottom:2px solid;
 }
 
-article>p{
+article p{
   font-size:16px; 
 }
 
